@@ -138,7 +138,7 @@ a:hover {
 
 /* Button link styles (optional) */
 .btn {
-  color: white; /* Default button text color */
+  color: rgb(14, 13, 13); /* Default button text color */
 }
 
 .btn-outline-success {
