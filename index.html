@@ -4,90 +4,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Saukur hereuy</title>
+  <title>Home - AhlanBoys</title>
   <!-- Bootstrap CSS -->
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="icon" href="img/asep-removebg-preview.png" type="image/png">
-  <style>
-    /* Hero Section */
-    .hero-section {
-      background: url('img/bck.jpg') no-repeat center center/cover;
-      height: 100vh;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      position: relative;
-    }
-    .hero-overlay {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      background: rgba(0, 0, 0, 0.5); /* Overlay transparan */
-    }
-    .hero-content {
-      position: relative;
-      z-index: 1;
-      text-align: center;
-    }
-    .btn-custom {
-      background-color: #FFC107;
-      color: white;
-      border: none;
-    }
-    .btn-custom:hover {
-      background-color: #FFB300;
-    }
-    /* Features Section */
-    .features-section {
-      padding: 50px 0;
-      background-color: #f5f5f5;
-    }
-    .features-section .col-md-4 {
-      padding: 20px;
-      background-color: white;
-      border-radius: 10px;
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-    .features-section i {
-      color: #FF6F61;
-      margin-bottom: 10px;
-    }
-    /* About Section */
-    #about {
-      background: linear-gradient(45deg, #00c6ff, #0072ff);
-      color: white;
-      padding: 50px 0;
-    }
-    /* Contact Section */
-    #contact {
-      background-color: #f5f5f5;
-      padding: 50px 0;
-    }
-    .form-control {
-      border-radius: 0;
-    }
-    .footer {
-      background-color: #343a40;
-      color: white;
-      padding: 20px 0;
-    }
-    /* Misc */
-    .text-gradient {
-      background: -webkit-linear-gradient(45deg, #0a0a0a, #0c0c0c);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-    }
-    /* Logo near MyWebsite */
-    .navbar-brand img {
-      max-height: 40px;
-      margin-right: 10px;
-      border-radius: 50%; /* Membuat gambar menjadi bulat */
-      object-fit: cover; /* Menjaga proporsi gambar */
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
@@ -95,8 +15,7 @@
   <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
       <a class="navbar-brand" href="#">
-        <img src="img/asep.png" alt="Logo"> <!-- Logo di sebelah MyWebsite -->
-        <span class="text-gradient">AhlanBoys</span>
+        <img src="img/asep.png" alt="Logo" class="logo"> AhlanBoys
       </a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -104,7 +23,7 @@
       <div class="collapse navbar-collapse" id="navbarNav">
         <ul class="navbar-nav ml-auto">
           <li class="nav-item active">
-            <a class="nav-link" href="#">Home</a>
+            <a class="nav-link" href="index.html">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="features.html">Features</a>
@@ -122,67 +41,11 @@
 
   <!-- Hero Section -->
   <section class="hero-section">
-    <div class="hero-overlay"></div> <!-- Overlay transparan di atas background gambar -->
+    <div class="hero-overlay"></div>
     <div class="hero-content">
-      <h1 class="display-4">Selamat datang di website saya</h1>
-      <p class="lead">Kami menawarkan solusi terbaik untuk bisnis Anda</p>
-      <a href="#features" class="btn btn-custom btn-lg">Pelajari lebih lanjut</a>
-    </div>
-  </section>
-
-  <!-- Features Section -->
-  <section id="features" class="features-section text-center">
-    <div class="container">
-      <h2>Fitur Kami</h2>
-      <p class="lead">Lihat apa yang kami tawarkan</p>
-      <div class="row">
-        <div class="col-md-4">
-          <i class="fas fa-cog fa-3x"></i>
-          <h3>Mudah digunakan</h3>
-          <p>Platform kami ramah pengguna dan mudah dinavigasi.</p>
-        </div>
-        <div class="col-md-4">
-          <i class="fas fa-shield-alt fa-3x"></i>
-          <h3>Aman</h3>
-          <p>Data Anda aman bersama kami, berkat fitur keamanan terbaik.</p>
-        </div>
-        <div class="col-md-4">
-          <i class="fas fa-tachometer-alt fa-3x"></i>
-          <h3>Performa Cepat</h3>
-          <p>Nikmati waktu pemuatan secepat kilat dan kinerja lancar.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- About Section -->
-  <section id="about" class="text-center">
-    <div class="container">
-      <h2>Tentang Kami</h2>
-      <p class="lead">Kami berdedikasi untuk memberikan layanan terbaik bagi klien kami</p>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
-    </div>
-  </section>
-
-  <!-- Contact Section -->
-  <section id="contact" class="text-center">
-    <div class="container">
-      <h2>Hubungi kami</h2>
-      <p class="lead">Kami ingin mendengar pendapat Anda!</p>
-      <form>
-        <div class="form-row">
-          <div class="form-group col-md-6">
-            <input type="text" class="form-control" id="name" placeholder="Your Name">
-          </div>
-          <div class="form-group col-md-6">
-            <input type="email" class="form-control" id="email" placeholder="Your Email">
-          </div>
-        </div>
-        <div class="form-group">
-          <textarea class="form-control" id="message" rows="5" placeholder="Your Message"></textarea>
-        </div>
-        <button type="submit" class="btn btn-custom">Kirim Pesan</button>
-      </form>
+      <h1 class="display-4">Selamat datang di AhlanBoys</h1>
+      <p class="lead">Kami menawarkan solusi terbaik untuk bisnis Anda.</p>
+      <a href="features.html" class="btn btn-custom btn-lg">Pelajari lebih lanjut</a>
     </div>
   </section>
 
@@ -197,6 +60,5 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
 </body>
 </html>

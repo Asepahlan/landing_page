@@ -1,38 +1,69 @@
-<!-- About Section -->
-<section id="about" class="about-section py-5">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>About - AhlanBoys</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
-      <div class="row align-items-center">
-        <div class="col-lg-6 mb-4 mb-lg-0">
-          <img src="img/asep.png" class="img-fluid rounded" alt="About Image">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/asep.png" alt="Logo" class="logo"> AhlanBoys
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="features.html">Features</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- About Section -->
+  <section class="about-section py-5">
+    <div class="container">
+      <h2>Tentang Kami</h2>
+      <p class="lead">Kami adalah perusahaan teknologi yang berkomitmen untuk menyediakan solusi inovatif dan aman.</p>
+      <div class="row">
+        <div class="col-md-6">
+          <img src="img/asep.png" class="img-fluid" alt="About us">
         </div>
-        <div class="col-lg-6">
-          <h2 class="font-weight-bold mb-4">About Us</h2>
-          <p class="lead text-muted mb-4">We are a dedicated team committed to delivering the best experience for our users. Our platform offers a wide range of services tailored to your needs, ensuring efficiency and security.</p>
-          <p class="text-muted">Founded in 2023, we have continuously strived to innovate and improve our services. Our mission is to provide top-quality solutions that make a positive impact on our clients and the community. Whether you are looking for a reliable service or a trusted partner, we are here to support you every step of the way.</p>
-          <a href="#contact" class="btn btn-primary btn-lg mt-3">Contact Us</a>
+        <div class="col-md-6">
+          <h3>Misi Kami</h3>
+          <p>Menyediakan teknologi berkualitas yang dapat diakses oleh siapa pun dan meningkatkan produktivitas bisnis.</p>
         </div>
       </div>
     </div>
   </section>
-  
-  <!-- CSS for About Section -->
-  <style>
-    .about-section {
-      background-color: #f4f4f4;
-    }
-  
-    .about-section h2 {
-      color: #333;
-    }
-  
-    .about-section p {
-      color: #666;
-    }
-  
-    .about-section img {
-      max-width: 100%;
-      height: auto;
-      border-radius: 8px;
-    }
-  </style>
-  
+
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2024 AhlanBoys Project. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

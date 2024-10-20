@@ -1,0 +1,137 @@
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #3e9c3e, #3044fc); /* Gradien warna cerah */
+    height: 100vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+  }
+  
+  .hero-overlay {
+    background: rgba(0, 0, 0, 0.4); /* Sedikit lebih terang dari sebelumnya */
+  }
+  
+  /* Features Section */
+  .features-section {
+    padding: 50px 0;
+    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradien warna biru dan ungu */
+    color: white;
+  }
+  
+  .features-section .col-md-4 {
+    background-color: rgba(255, 255, 255, 0.1); /* Transparan agar menyesuaikan dengan background */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi saat hover */
+  }
+  
+  .features-section .col-md-4:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan saat hover */
+  }
+  
+  /* About Section */
+  .about-section {
+    background: linear-gradient(135deg, #407c58, #0575e6); /* Hijau dan biru untuk kesegaran */
+    color: white;
+    padding: 50px 0;
+  }
+/* Tombol Custom */
+.btn-custom {
+    background-color: #00ff37; /* Warna oranye terang */
+    color: white;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease; /* Efek transisi */
+  }
+  
+  .btn-custom:hover {
+    background-color: #ff4a3d; /* Warna lebih gelap saat hover */
+    transform: translateY(-5px); /* Tombol bergerak sedikit ke atas */
+  }
+  
+  /* Hover untuk navbar links */
+  .navbar-nav .nav-link {
+    color: #343a40; /* Warna default navbar link */
+    transition: color 0.3s ease;
+  }
+  
+  .navbar-nav .nav-link:hover {
+    color: #18351c; /* Warna oranye terang saat hover */
+  }
+/* Footer */
+.footer {
+    background-color: #2C3E50; /* Warna biru tua untuk footer */
+    color: #ecf0f1; /* Warna teks lebih terang */
+    padding: 20px 0;
+    text-align: center;
+  }
+  
+  .footer a {
+    color: #ff6f61; /* Tautan di footer menjadi oranye */
+    text-decoration: none;
+  }
+  
+  .footer a:hover {
+    color: #ff4a3d; /* Tautan lebih gelap saat hover */
+  }
+/* Tombol di Halaman Kontak */
+.contact-section .btn-custom {
+    background-color: #07661f;
+    color: white;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .contact-section .btn-custom:hover {
+    background-color: #ff4a3d;
+    transform: translateY(-5px);
+  }
+/* Logo menjadi lebih menonjol */
+.navbar-brand img {
+    max-height: 40px;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 40px;
+    height: 40px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan agar lebih menonjol */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .navbar-brand img:hover {
+    transform: scale(1.1); /* Perbesar sedikit saat hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Tambah bayangan saat hover */
+  }
+  .contact-icon {
+    width: 60px; /* Mengatur lebar tetap */
+    height: 60px; /* Mengatur tinggi tetap */
+    object-fit: cover; /* Mempertahankan rasio aspek */
+    margin-bottom: 5px; /* Spasi antara ikon dan teks */
+  }  
+  .nav-link.active {
+    color: black; /* Change the text color to black */
+    font-weight: bold; /* Make text bold for emphasis */
+  }
+
+    /* Additional CSS for full layout */
+    .features-section {
+      padding: 100px 0; /* Add more vertical padding for full height */
+      background-color: #f8f9fa; /* Light background for contrast */
+    }
+    .feature-item {
+      display: flex;
+      flex-direction: column;
+      align-items: center; /* Center icons and text */
+      text-align: center; /* Center text */
+      padding: 20px; /* Padding inside each item */
+    }
+    .feature-item i {
+      margin-bottom: 15px; /* Space between icon and title */
+      font-size: 3rem; /* Increase icon size */
+    }
+    @media (max-width: 768px) {
+      .feature-item {
+        padding: 10px; /* Adjust padding on smaller screens */
+      }
+    }

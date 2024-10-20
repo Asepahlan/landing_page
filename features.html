@@ -1,119 +1,87 @@
-<!-- Features Section -->
-<section id="features" class="features-section py-5">
-    <div class="container text-center">
-      <h2 class="mb-5 font-weight-bold">Our Amazing Features</h2>
-      <p class="lead mb-4">Explore the features that make us stand out from the rest</p>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Features - AhlanBoys</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
+      <a class="navbar-brand" href="index.html">
+        <img src="img/asep.png" alt="Logo" class="logo"> AhlanBoys
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item active">
+            <a class="nav-link" href="features.html">Features</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="about.html">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Features Section -->
+  <section id="features" class="features-section text-center">
+    <div class="container">
+      <h2>Fitur Kami</h2>
+      <p class="lead">Lihat apa yang kami tawarkan</p>
       <div class="row">
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card border-0 shadow feature-box">
-            <div class="card-body text-center">
-              <div class="icon-container bg-primary text-white mb-4">
-                <i class="fas fa-cog fa-3x"></i>
-              </div>
-              <h4 class="card-title">Easy to Use</h4>
-              <p class="card-text">Our platform is designed for ease of use, even for beginners.</p>
-            </div>
+        <div class="col-md-4">
+          <div class="feature-item">
+            <i class="fas fa-cog fa-3x text-primary"></i>
+            <h3>Mudah digunakan</h3>
+            <p>Platform kami ramah pengguna dan mudah dinavigasi.</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card border-0 shadow feature-box">
-            <div class="card-body text-center">
-              <div class="icon-container bg-success text-white mb-4">
-                <i class="fas fa-shield-alt fa-3x"></i>
-              </div>
-              <h4 class="card-title">Highly Secure</h4>
-              <p class="card-text">We offer top-notch security to keep your data safe.</p>
-            </div>
+        <div class="col-md-4">
+          <div class="feature-item">
+            <i class="fas fa-shield-alt fa-3x text-primary"></i>
+            <h3>Aman</h3>
+            <p>Data Anda aman bersama kami, berkat fitur keamanan terbaik.</p>
           </div>
         </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card border-0 shadow feature-box">
-            <div class="card-body text-center">
-              <div class="icon-container bg-danger text-white mb-4">
-                <i class="fas fa-tachometer-alt fa-3x"></i>
-              </div>
-              <h4 class="card-title">Fast Performance</h4>
-              <p class="card-text">Enjoy fast and seamless performance across all devices.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card border-0 shadow feature-box">
-            <div class="card-body text-center">
-              <div class="icon-container bg-info text-white mb-4">
-                <i class="fas fa-headset fa-3x"></i>
-              </div>
-              <h4 class="card-title">24/7 Support</h4>
-              <p class="card-text">Get round-the-clock support for all your needs.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card border-0 shadow feature-box">
-            <div class="card-body text-center">
-              <div class="icon-container bg-warning text-white mb-4">
-                <i class="fas fa-mobile-alt fa-3x"></i>
-              </div>
-              <h4 class="card-title">Mobile Friendly</h4>
-              <p class="card-text">Our platform is optimized for mobile devices for a smooth experience.</p>
-            </div>
-          </div>
-        </div>
-        <div class="col-lg-4 col-md-6 mb-4">
-          <div class="card border-0 shadow feature-box">
-            <div class="card-body text-center">
-              <div class="icon-container bg-secondary text-white mb-4">
-                <i class="fas fa-cloud fa-3x"></i>
-              </div>
-              <h4 class="card-title">Cloud Integration</h4>
-              <p class="card-text">Easily integrate with cloud services for seamless access.</p>
-            </div>
+        <div class="col-md-4">
+          <div class="feature-item">
+            <i class="fas fa-tachometer-alt fa-3x text-primary"></i>
+            <h3>Performa Cepat</h3>
+            <p>Nikmati waktu pemuatan secepat kilat dan kinerja lancar.</p>
           </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- CSS for Features Section -->
-  <style>
-    .features-section {
-      background: linear-gradient(135deg, #f9f9f9, #e0e0e0);
-    }
-    
-    .feature-box {
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      border-radius: 15px;
-    }
-  
-    .feature-box:hover {
-      transform: translateY(-10px);
-      box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-    }
-  
-    .icon-container {
-      width: 80px;
-      height: 80px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      border-radius: 50%;
-      margin: 0 auto;
-      transition: background-color 0.3s ease;
-    }
-  
-    .icon-container:hover {
-      background-color: rgba(255, 255, 255, 0.1);
-    }
-  
-    .card-title {
-      font-weight: bold;
-      margin-top: 15px;
-      font-size: 1.5rem;
-      color: #333;
-    }
-  
-    .card-text {
-      color: #6c757d;
-      margin-top: 10px;
-    }
-  </style>
+  <!-- Footer -->
+  <footer class="footer text-center">
+    <div class="container">
+      <p>&copy; 2024 AhlanBoys Project. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
