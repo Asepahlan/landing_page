@@ -1,115 +1,178 @@
 /* Hero Section */
 .hero-section {
-    background: linear-gradient(135deg, #3e9c3e, #3044fc); /* Gradien warna cerah */
-    height: 100vh;
-    color: white;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-  }
-  
-  .hero-overlay {
-    background: rgba(0, 0, 0, 0.4); /* Sedikit lebih terang dari sebelumnya */
-  }
-  
-  /* Features Section */
-  .features-section {
-    padding: 50px 0;
-    background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradien warna biru dan ungu */
-    color: white;
-  }
-  
-  .features-section .col-md-4 {
-    background-color: rgba(255, 255, 255, 0.1); /* Transparan agar menyesuaikan dengan background */
-    padding: 20px;
-    border-radius: 10px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi saat hover */
-  }
-  
-  .features-section .col-md-4:hover {
-    transform: translateY(-10px);
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan saat hover */
-  }
-  
-  /* About Section */
-  .about-section {
-    background: linear-gradient(135deg, #407c58, #0575e6); /* Hijau dan biru untuk kesegaran */
-    color: white;
-    padding: 50px 0;
-  }
-/* Tombol Custom */
+  background: linear-gradient(135deg, #3e9c3e, #3044fc); /* Gradien warna cerah */
+  height: 100vh;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+
+.hero-overlay {
+  background: rgba(0, 0, 0, 0.4); /* Overlay transparan */
+}
+
+/* Features Section */
+.features-section {
+  padding: 50px 0;
+  background: linear-gradient(135deg, #6a11cb, #2575fc); /* Gradien biru dan ungu */
+  color: white;
+}
+
+.features-section .col-md-4 {
+  background-color: rgba(255, 255, 255, 0.1); /* Transparan agar menyesuaikan dengan background */
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Efek transisi saat hover */
+}
+
+.features-section .col-md-4:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Tambahkan bayangan saat hover */
+}
+
+/* About Section */
+.about-section {
+  background: linear-gradient(135deg, #407c58, #0575e6); /* Gradien hijau dan biru */
+  color: white;
+  padding: 50px 0;
+}
+
+/* Custom Button */
 .btn-custom {
-    background-color: #00ff37; /* Warna oranye terang */
-    color: white;
-    border: none;
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Efek transisi */
-  }
-  
-  .btn-custom:hover {
-    background-color: #ff4a3d; /* Warna lebih gelap saat hover */
-    transform: translateY(-5px); /* Tombol bergerak sedikit ke atas */
-  }
-  
-  /* Hover untuk navbar links */
-  .navbar-nav .nav-link {
-    color: #343a40; /* Warna default navbar link */
-    transition: color 0.3s ease;
-  }
-  
-  .navbar-nav .nav-link:hover {
-    color: #18351c; /* Warna oranye terang saat hover */
-  }
+  background-color: #00ff37; /* Warna tombol */
+  color: white;
+  border: none;
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Efek transisi */
+}
+
+.btn-custom:hover {
+  background-color: #ff4a3d; /* Warna tombol saat hover */
+  transform: translateY(-5px); /* Tombol bergerak sedikit ke atas */
+}
+
+/* Navbar Links */
+.navbar-nav .nav-link {
+  color: #343a40; /* Warna default navbar link */
+  transition: color 0.3s ease;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #18351c; /* Warna saat hover */
+}
+
+/* Active Navbar Link */
+.nav-link.active {
+  color: black; /* Warna teks aktif */
+  font-weight: bold; /* Teks tebal untuk penekanan */
+}
+
 /* Footer */
 .footer {
-    background-color: #2C3E50; /* Warna biru tua untuk footer */
-    color: #ecf0f1; /* Warna teks lebih terang */
-    padding: 20px 0;
-    text-align: center;
-  }
-  
-  .footer a {
-    color: #ff6f61; /* Tautan di footer menjadi oranye */
-    text-decoration: none;
-  }
-  
-  .footer a:hover {
-    color: #ff4a3d; /* Tautan lebih gelap saat hover */
-  }
-/* Tombol di Halaman Kontak */
+  background-color: #2C3E50; /* Warna biru tua untuk footer */
+  color: #ecf0f1; /* Warna teks lebih terang */
+  padding: 20px 0;
+  text-align: center;
+}
+
+.footer a {
+  color: #ff6f61; /* Tautan di footer menjadi oranye */
+  text-decoration: none;
+}
+
+.footer a:hover {
+  color: #ff4a3d; /* Tautan lebih gelap saat hover */
+}
+
+/* Contact Section */
 .contact-section .btn-custom {
-    background-color: #07661f;
-    color: white;
-    transition: background-color 0.3s ease, transform 0.3s ease;
-  }
-  
-  .contact-section .btn-custom:hover {
-    background-color: #ff4a3d;
-    transform: translateY(-5px);
-  }
-/* Logo menjadi lebih menonjol */
+  background-color: #07661f; /* Warna tombol di halaman kontak */
+}
+
+.contact-section .btn-custom:hover {
+  background-color: #ff4a3d; /* Warna tombol saat hover */
+}
+
+/* Navbar Brand Logo */
 .navbar-brand img {
-    max-height: 40px;
-    border-radius: 50%;
-    object-fit: cover;
-    width: 40px;
-    height: 40px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tambahkan bayangan agar lebih menonjol */
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-  }
-  
-  .navbar-brand img:hover {
-    transform: scale(1.1); /* Perbesar sedikit saat hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Tambah bayangan saat hover */
-  }
-  .contact-icon {
-    width: 60px; /* Mengatur lebar tetap */
-    height: 60px; /* Mengatur tinggi tetap */
-    object-fit: cover; /* Mempertahankan rasio aspek */
-    margin-bottom: 5px; /* Spasi antara ikon dan teks */
-  }  
-  .nav-link.active {
-    color: black; /* Change the text color to black */
-    font-weight: bold; /* Make text bold for emphasis */
-  }
+  max-height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+  width: 40px;
+  height: 40px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan untuk logo */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.navbar-brand img:hover {
+  transform: scale(1.1); /* Perbesar saat hover */
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Tambah bayangan saat hover */
+}
+
+/* Contact Icon */
+.contact-icon {
+  width: 60px; /* Lebar tetap untuk ikon kontak */
+  height: 60px; /* Tinggi tetap untuk ikon kontak */
+  object-fit: cover; /* Mempertahankan rasio aspek */
+  margin-bottom: 5px; /* Spasi antara ikon dan teks */
+}
+/* Base link styles */
+a {
+  color: #ff5722; /* Default link color */
+  text-decoration: none; /* Remove underline */
+  transition: color 0.3s ease; /* Smooth transition for color changes */
+}
+
+/* Link hover effect */
+a:hover {
+  color: #0056b3; /* Change color on hover */
+}
+
+/* Active link style */
+.nav-link.active {
+  color: #ff5722; /* Active link color */
+  font-weight: bold; /* Make active link bold */
+}
+
+/* Button link styles (optional) */
+.btn {
+  color: white; /* Default button text color */
+}
+
+.btn-outline-success {
+  border-color: #28a745; /* Border color for success button */
+}
+
+.btn-outline-success:hover {
+  background-color: #28a745; /* Background color on hover */
+  color: white; /* Text color on hover */
+}
+
+.btn-outline-primary {
+  border-color: #ff5722; /* Border color for primary button */
+}
+
+.btn-outline-primary:hover {
+  background-color: #007bff; /* Background color on hover */
+  color: white; /* Text color on hover */
+}
+
+.btn-outline-info {
+  border-color: #17a2b8; /* Border color for info button */
+}
+
+.btn-outline-info:hover {
+  background-color: #17a2b8; /* Background color on hover */
+  color: white; /* Text color on hover */
+}
+
+.btn-outline-dark {
+  border-color: #343a40; /* Border color for dark button */
+}
+
+.btn-outline-dark:hover {
+  background-color: #343a40; /* Background color on hover */
+  color: white; /* Text color on hover */
+}
