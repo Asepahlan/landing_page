@@ -5,11 +5,19 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>About - AhlanBoys</title>
+  
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Learn about AhlanBoys, a technology company dedicated to providing innovative and secure solutions for businesses.">
+  <meta name="keywords" content="AhlanBoys, about us, technology company, innovative solutions, secure technology, digital solutions, customer service">
+  <meta property="og:title" content="About - AhlanBoys">
+  <meta property="og:description" content="Discover AhlanBoys, a company committed to delivering high-quality and secure technology solutions for businesses.">
+  <meta property="og:image" content="img/asep.png">
+  <meta property="og:url" content="https://www.ahlanboys.com/about.html">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/asep-removebg-preview.png" type="image/x-icon">
   <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
-    <!-- Favicon -->
-    <link rel="icon" href="img/asep-removebg-preview.png" type="image/x-icon">
-
 </head>
 <body>
 
@@ -44,17 +52,34 @@
   <!-- About Section -->
   <section class="about-section py-5">
     <div class="container">
-      <h2>Tentang Kami</h2>
+      <h1 class="display-4">Tentang Kami</h1>
       <p class="lead">Kami adalah perusahaan teknologi yang berkomitmen untuk menyediakan solusi inovatif dan aman.</p>
       <div class="row">
         <div class="col-md-6">
-          <img src="img/asep.png" class="img-fluid" alt="About us">
+          <img src="img/asep.png" class="img-fluid" alt="About AhlanBoys - Our Logo">
         </div>
         <div class="col-md-6">
           <h3>Misi Kami</h3>
           <p>Menyediakan teknologi berkualitas yang dapat diakses oleh siapa pun dan meningkatkan produktivitas bisnis.</p>
+          
+          <h3>Visi Kami</h3>
+          <p>Menjadi pemimpin dalam solusi teknologi yang aman dan inovatif di pasar global.</p>
+
+          <h3>Nilai-Nilai Kami</h3>
+          <ul>
+            <li>Inovasi: Selalu mencari cara baru untuk memberikan solusi terbaik.</li>
+            <li>Keamanan: Memastikan data pelanggan terlindungi.</li>
+            <li>Keberlanjutan: Berkomitmen terhadap praktik bisnis yang berkelanjutan.</li>
+          </ul>
+          
+          <h3>Tim Kami</h3>
+          <p>Kami memiliki tim profesional yang berpengalaman dan berdedikasi untuk membantu Anda. Setiap anggota tim kami memiliki keahlian di bidangnya, siap memberikan layanan terbaik kepada pelanggan.</p>
+          
+          <h3>Hubungi Kami</h3>
+          <p>Jika Anda memiliki pertanyaan atau ingin mendiskusikan kebutuhan bisnis Anda, jangan ragu untuk <a href="contact.html">menghubungi kami</a>. Kami siap membantu Anda!</p>
         </div>
       </div>
+      <p>Ingin tahu lebih banyak? <a href="contact.html">Hubungi kami</a>!</p>
     </div>
   </section>
 
@@ -68,5 +93,27 @@
   <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <!-- Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AhlanBoys",
+    "url": "https://www.ahlanboys.com",
+    "logo": "https://www.ahlanboys.com/img/asep.png",
+    "sameAs": [
+      "https://facebook.com/ahlanboys",
+      "https://twitter.com/ahlanboys"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+123456789",
+      "contactType": "Customer Service",
+      "areaServed": "ID",
+      "availableLanguage": "Indonesian"
+    }
+  }
+  </script>
 </body>
 </html>
